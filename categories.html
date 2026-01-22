@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamza Jadoon - Categories</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+    .category-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow);
+    }
+    .category-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--hover-shadow);
+      border-color: var(--primary);
+    }
+    .category-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .category-card:hover .category-image {
+      transform: scale(1.1);
+    }
+    .category-info {
+      padding: 25px;
+      text-align: center;
+    }
+    .category-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .category-count {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .category-btn {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .category-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo-wrapper">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+        <text x="50" y="55" font-size="32" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">HJ</text>
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="logo-text">
+        <p class="logo-name">Hamza Jadoon</p>
+        <p class="logo-subtitle">Gallery</p>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="categories.html" class="nav-link">Categories</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>🏷️ Browse Categories</h1>
+  <p>Explore our collections by category</p>
+</section>
+
+<!-- CATEGORIES -->
+<div class="categories-grid">
+  
+  <!-- Nature -->
+  <div class="category-card">
+    <img src="nature/img1.jpeg" alt="Nature" class="category-image">
+    <div class="category-info">
+      <div class="category-title"> Nature</div>
+      
+      <a href="gallery.html?category=nature" class="category-btn">View</a>
+    </div>
+  </div>
+
+
+
+  <!-- City -->
+  <div class="category-card">
+    <img src="city/atd5.jpg" alt="City" class="category-image">
+    <div class="category-info">
+      <div class="category-title"> City</div>
+      
+      <a href="gallery.html?category=city" class="category-btn">View</a>
+    </div>
+  </div>
+
+  <!-- People -->
+  <div class="category-card">
+    <img src="self/p1.jpeg" alt="People" class="category-image">
+    <div class="category-info">
+      <div class="category-title"> People</div>
+      
+      <a href="gallery.html?category=people" class="category-btn">View</a>
+    </div>
+  </div>
+
+  <!-- Animals -->
+  <div class="category-card">
+    <img src="animal/a1.jpeg" alt="Animals" class="category-image">
+    <div class="category-info">
+      <div class="category-title">Animals</div>
+      
+      <a href="gallery.html?category=animals" class="category-btn">View</a>
+    </div>
+  </div>
+
+  
+
+</div>
+
+<!-- FOOTER -->
+<footer style="background: var(--bg-secondary); color: var(--text-muted); padding: 30px; text-align: center; margin-top: 60px; border-top: 2px solid var(--border);">
+  <p>&copy; 2026 Hamza Jadoon. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

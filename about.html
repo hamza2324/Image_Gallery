@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamza Jadoon - Resume</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .resume-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+    .resume-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow);
+    }
+    .resume-section h2 {
+      font-size: 28px;
+      color: var(--primary);
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 15px;
+    }
+    .timeline {
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--primary), var(--secondary));
+    }
+    .timeline-item {
+      position: relative;
+      margin-left: 80px;
+      padding-bottom: 30px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -60px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+    .timeline-item h3 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .timeline-item span {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .timeline-item p {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skill-item {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .skill-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--hover-shadow);
+    }
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .education-card {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.1));
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      transition: all 0.3s ease;
+    }
+    .education-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+    .education-card h4 {
+      color: var(--primary);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .education-card .date {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    .education-card p {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 14px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo-wrapper">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+        <text x="50" y="55" font-size="32" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">HJ</text>
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="logo-text">
+        <p class="logo-name">Hamza Jadoon</p>
+        <p class="logo-subtitle">Gallery</p>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="categories.html" class="nav-link">Categories</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>📋 My Resume</h1>
+  <p>A detailed view of my academic, professional and project experience</p>
+</section>
+
+<!-- RESUME CONTENT -->
+<div class="resume-container">
+  
+  <!-- Experience & Education -->
+  <div class="resume-section">
+    <h2>Experience & Education</h2>
+    
+    <div class="timeline">
+      
+      <div class="timeline-item">
+        <h3>Bachelor of Computer Engineering</h3>
+        <span>COMSATS University, Abbottabad | 2022 - Present</span>
+        <p>Studied advanced courses in Microprocessors, Machine Learning, Control Systems, and Web Development. Completed multiple projects and FYP.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Internship / Web Development Projects</h3>
+        <span>Freelance & Academic | Current</span>
+        <p>Built multiple front-end and full-stack projects hosted on GitHub, showcasing professional UI/UX skills, responsive design, and engineering applications.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Engineering Projects</h3>
+        <span>University Labs & FYP | 2022 - Present</span>
+        <p>Completed embedded systems, control systems, and network monitoring projects using PIC microcontrollers, LM35 sensors, MATLAB simulations, and machine learning.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="resume-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">HTML & CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Web Design</div>
+      <div class="skill-item">Responsive Design</div>
+      <div class="skill-item">Git & GitHub</div>
+      <div class="skill-item">Embedded Systems</div>
+      <div class="skill-item">MATLAB</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">Machine Learning</div>
+      <div class="skill-item">Problem Solving</div>
+    </div>
+  </div>
+
+  <!-- Education Details -->
+  <div class="resume-section">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <h4>🎓 Bachelor's Degree</h4>
+        <div class="date">Computer Engineering</div>
+        <p><strong>COMSATS University, Abbottabad</strong><br>2022 - Present<br><br>Advanced coursework in modern engineering disciplines and hands-on project experience.</p>
+      </div>
+      <div class="education-card">
+        <h4>💻 Web Development</h4>
+        <div class="date">Self-Taught & Freelance</div>
+        <p><strong>Frontend Development</strong><br>Proficient in HTML, CSS, JavaScript, and modern web frameworks.<br><br>Built numerous responsive and interactive web applications.</p>
+      </div>
+      <div class="education-card">
+        <h4>🔧 Technical Training</h4>
+        <div class="date">Embedded Systems & IoT</div>
+        <p><strong>Microcontroller Programming</strong><br>Experience with PIC microcontrollers, sensors, and hardware integration.<br><br>IoT project implementation and debugging.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications & Achievements -->
+  <div class="resume-section">
+    <h2>Certifications & Achievements</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <h4>🏆 Academic Excellence</h4>
+        <div class="date">University Recognition</div>
+        <p>Successfully completed multiple advanced engineering courses with strong performance and active participation in university projects.</p>
+      </div>
+      <div class="education-card">
+        <h4>🚀 Project Completion</h4>
+        <div class="date">Engineering & Development</div>
+        <p>Delivered multiple successful projects in embedded systems, web development, and machine learning, showcasing technical competency.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div class="resume-section">
+    <h2>About Me</h2>
+    <p style="color: var(--text); font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+      I'm Hamza Jadoon, a dedicated Computer Engineering student with a passion for Web development, Machine Learning, and GenAi. With a strong foundation in technical skills and creative problem-solving, I strive to deliver high-quality solutions.
+    </p>
+    <p style="color: var(--text); font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+      My journey combines academic excellence with practical experience, working on diverse projects ranging from  web applications to complex machine learning algorithms. I'm committed to continuous learning and leveraging technology to create impactful solutions.
+    </p>
+    <p style="color: var(--text); font-size: 16px; line-height: 1.8;">
+      Whether it's building responsive web interfaces, programming Machine Learning models, or making Ai agents, I bring dedication, creativity, and technical expertise to every project.
+    </p>
+    <a href="resume.html" download class="download-btn">Download Resume PDF</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="background: var(--bg-secondary); color: var(--text-muted); padding: 30px; text-align: center; margin-top: 60px; border-top: 2px solid var(--border);">
+  <p>&copy; 2026 Hamza Jadoon. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

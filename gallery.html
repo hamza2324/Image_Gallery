@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamza Jadoon - Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo-wrapper">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+        <text x="50" y="55" font-size="32" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">HJ</text>
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="logo-text">
+        <p class="logo-name">Hamza Jadoon</p>
+        <p class="logo-subtitle">Gallery</p>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="categories.html" class="nav-link">Categories</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1> Image Gallery</h1>
+  <p>Explore all collections with interactive features</p>
+</section>
+
+<!-- FILTERS -->
+<div class="filters-wrapper">
+  <div class="filters">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+    
+    <button class="filter-btn" data-filter="city">🏙️ City</button>
+    <button class="filter-btn" data-filter="people">👥 People</button>
+    <button class="filter-btn" data-filter="animals">🦁 Animals</button>
+    
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-container">
+  <div class="gallery-header">
+    <h2>All Photos</h2>
+  </div>
+  <section class="gallery">
+
+<!-- NATURE (10) -->
+<div class="gallery-item nature">
+  <img src="nature/img1.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <img src="nature/img2.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <img src="nature/img3.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <img src="nature/img4.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <img src="nature/img5.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <img src="nature/img6.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <video width="600" height="400" controls>
+    <source src="nature/v1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <video width="600" height="400" controls>
+    <source src="nature/v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item nature">
+  <video width="600" height="400" controls>
+    <source src="nature/v3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+
+
+
+<!-- CITY (10) -->
+<div class="gallery-item city">
+  <img src="city/adt1.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item city">
+  <img src="city/adt2.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item city">
+  <img src="city/atd3.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item city">
+  <img src="city/atd4.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item city">
+  <img src="city/atd5.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item city">
+  <img src="city/atd6.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+
+<!-- PEOPLE (10) -->
+<div class="gallery-item people">
+  <img src="self/p1.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p2.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p3.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p4.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p5.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p6.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item people">
+  <img src="self/p7.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+
+<!-- ANIMALS (10) -->
+<div class="gallery-item animals">
+  <img src="animal/a1.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item animals">
+  <img src="animal/a2.jpeg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item animals">
+  <img src="animal/a3.jpg">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item animals">
+  <img src="animal/a4.webp">
+    <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+<div class="gallery-item animals">
+  <img src="animal/a5.webp">
+  <div class="gallery-overlay">
+    <button class="view-btn">View</button>
+  </div>
+</div>
+
+
+
+
+<!-- FOOTER -->
+<footer style="background: var(--bg-secondary); color: var(--text-muted); padding: 30px; text-align: center; margin-top: 60px; border-top: 2px solid var(--border);">
+  <p>&copy; 2026 Hamza Jadoon. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

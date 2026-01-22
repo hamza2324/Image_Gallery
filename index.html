@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamza Jadoon - Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo-wrapper">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+        <text x="50" y="55" font-size="32" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">HJ</text>
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="logo-text">
+        <p class="logo-name">Hamza Jadoon</p>
+        <p class="logo-subtitle">Gallery</p>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="categories.html" class="nav-link">Categories</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1> Welcome to Hamza Jadoon's Gallery</h1>
+  <p>Explore stunning collections with interactive features</p>
+</section>
+
+<!-- HOME CONTENT -->
+<section class="gallery-container">
+  <div class="gallery-header">
+    <h2>Welcome Home</h2>
+  </div>
+  <div style="max-width: 800px; margin: 0 auto; padding: 40px; text-align: center;">
+    <p style="font-size: 18px; line-height: 1.8; color: var(--text); margin-bottom: 30px;">
+      Welcome to my personal gallery! I'm Hamza Jadoon, a passionate photography enthusiast dedicated to capturing the beauty of nature, technology, cities, people, animals, and travel destinations. 
+    </p>
+    <p style="font-size: 18px; line-height: 1.8; color: var(--text); margin-bottom: 40px;">
+      Explore my collections and discover the world through my lens. Each image tells a story, and every moment captured is a memory preserved forever.
+    </p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="gallery.html" style="display: inline-block; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 14px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        View Gallery
+      </a>
+      <a href="categories.html" style="display: inline-block; background: transparent; color: var(--primary); padding: 14px 40px; border-radius: 30px; border: 2px solid var(--primary); text-decoration: none; font-weight: 700; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.background='var(--primary)'; this.style.color='var(--bg)'" onmouseout="this.style.background='transparent'; this.style.color='var(--primary)'">
+        Browse Categories
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: var(--bg-secondary); color: var(--text-muted); padding: 30px; text-align: center; margin-top: 60px; border-top: 2px solid var(--border);">
+  <p>&copy; 2026 Hamza Jadoon. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
