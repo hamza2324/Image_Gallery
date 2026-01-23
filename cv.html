@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamza Jadoon - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #2c3e50;
+        }
+
+        .header p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Content */
+        .content-item {
+            margin-bottom: 15px;
+        }
+
+        .content-item h3 {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .content-item span {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .content-item ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .content-item ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            padding-left: 8px; /* keep bullets/alignment readable */
+            list-style-position: inside;
+        }
+
+        .skills-list li {
+            font-size: 14px;
+            margin-bottom: 4px;
+            padding: 6px 8px;
+            background: #ffffff;
+            border: 1px solid #eef1f4;
+            border-radius: 6px;
+        }
+
+        /* Sidebar & Layout */
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .sidebar {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eef1f4;
+        }
+
+        .sidebar .name h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+
+        .sidebar .role {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .contact-grid a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .sidebar-section .section-title {
+            border-left: none;
+            padding-left: 0;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            padding: 10px 0;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        /* Contact (for legacy) */
+        .contact p {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .grid-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .main {
+                max-width: 100%;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <div class="grid-wrapper">
+        <aside class="sidebar">
+            <div class="name">
+                <h1>Hamza Jadoon</h1>
+                <p class="role">Computer Engineering Student</p>
+            </div>
+
+            <div class="contact-grid">
+                <div><strong>Email</strong><br><a href="hamzajadoon71@email.com">hamzajadoon71@email.com</a></div>
+                <div><strong>Phone</strong><br>+92-3190809334</div>
+                <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/hamza-jadoon-6645a7259/" target="_blank">HamzaJadoon</a></div>
+                <div><strong>Location</strong><br>Pakistan</div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="section-title">Technical Skills</div>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>GenAI</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>MS-Office</li>
+                    <li>Assembly Language</li>
+                    <li>Machine Learning</li>
+                    <li>Video Editing (Short-form)</li>
+                    <li>Problem Solving & Debugging</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="section">
+                <div class="section-title">Profile Summary</div>
+                <p>
+                    Motivated Computer Engineering student with strong interest in web development,
+                    Artificial Intelligence and Machine learning. Passionate about building practical
+                    solutions and continuously improving technical skills.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+
+                <div class="content-item">
+                    <h3>Intermediate (Pre-Engineering) </h3>
+                    <span>Progressive School and College Abbottabad –2022</span>
+                </div>
+
+                <div class="content-item">
+                    <h3>Bachelor of Science in Computer Engineering</h3>
+                    <span>COMSATS University Islamabad, Abbottabad Campus</span><br>
+                    <span>CGPA: 3.06/ 4.00 | Year: 2022 – 2026</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Work Experience</div>
+
+                <div class="content-item">
+                    <h3>Video Editor – Travel Guide</h3>
+                    <span>Jan 2025 – Present</span>
+                    <ul>
+                        <li>Edited short-form videos for TikTok, Instagram Reels, and YouTube Shorts.</li>
+                        <li>Repurposed long-form content into engaging viral clips.</li>
+                        <li>Applied color correction, sound design, and transitions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Projects</div>
+                <div class="content-item">
+                    <h3>GenAI based Shariah Compliant Stock Trade Advisor for Pakistan Stock Exchange(PSX)(A Final Year Project)</h3>
+                    <span>Python, LLMs, Streamlit, GrokAI API</span>
+                    <ul>
+                        <li>Developed a web-based Stock trade advisor.</li>
+                        <li>Which fetches all the stocks listed in PSX through API's and predict their potential.</li>
+                        <li>Guide users whether to invest in that particular stock or not or whats the potential of it in coming 1 month</li>
+                    </ul>
+                </div>
+
+                <div class="content-item">
+                    <h3>Pet Zone Website</h3>
+                    <span>HTML, CSS, JavaScript, PHP, MySQL</span>
+                    <ul>
+                        <li>Developed a pet buying and food ordering platform.</li>
+                        <li>Stored customer and product data in a database.</li>
+                    </ul>
+                </div>
+
+                <div class="content-item">
+                    <h3>Rain Detection System</h3>
+                    <span>PIC18F452 | Assembly Language</span>
+                    <ul>
+                        <li>Implemented sensor-based rain detection with LCD output.</li>
+                        <li>Used TMR0 for precise timing and delays.</li>
+                    </ul>
+                </div>
+
+                <div class="content-item">
+                    <h3>E-Commerce Online Store</h3>
+                    <span>HTML, CSS, JS, PHP, MySQL</span>
+                    <ul>
+                        <li>Built authentication, cart, search, and order system.</li>
+                        <li>Designed responsive UI for mobile and desktop.</li>
+                    </ul>
+                </div>
+                <div class="content-item">
+                    <h3>Industrial product inspection using DIP techniques</h3>
+                    <span>Python, libraries, web application(Streamlit)</span>
+                    <ul>
+                        <li>Created a Defect detection system for industrial products.</li>
+                        <li>Trained model using 6k images.</li>
+                        <li>Achieved accuracy of 80%.</li>
+                        <li>Web application built with Streamlit such that we dont need to train the model over and over again.We just gave it training images and it classifies whether it is defective or non defective product.</li>
+                    </ul>
+                </div>
+                <div class="content-item">
+                    <h3>Project Management and team task division web application</h3>
+                    <span>HTML, CSS, JS, NodeJS, MySQL</span>
+                    <ul>
+                        <li>Developed a system to manage project and task division.</li>
+                        <li>Login system for admins and team members.</li>
+                        <li>Implemented task assignment and progress tracking.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+   
+
+</div>
+
+</body>
+</html>
