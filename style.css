@@ -518,6 +518,10 @@ body {
   object-fit: cover;
   object-position: center 5%; /* 👈 moves focus upward to face */
 }
+.gallery-item.people img {
+  object-fit: cover;
+  object-position: center 5%; /* 👈 moves focus upward to face */
+}
 .footer {
   width: 100%;
   padding: 20px 0;
@@ -527,3 +531,79 @@ body {
   background: linear-gradient(135deg, #0f172a, #020617);
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+/* ===== IMAGE MODAL ===== */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-modal .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.image-modal .close-modal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.image-modal .close-modal:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .image-modal .modal-content {
+    width: 90%;
+    max-height: 70vh;
+  }
+
+  .image-modal .close-modal {
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+  }
+}
+
